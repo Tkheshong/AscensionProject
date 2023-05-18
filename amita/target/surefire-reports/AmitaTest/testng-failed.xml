@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [AmitaTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="AmitaTest">
+        <methods>
+          <include name="amita"/>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- AmitaTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [AmitaTest] -->

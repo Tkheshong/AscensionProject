@@ -1,0 +1,12 @@
+#surefire
+#Wed May 17 13:03:45 CDT 2023
+jpda.address=60481
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+file.encoding=UTF-8
+jpda.listen=true
+forkMode=once
+user.dir=C\:\\Users\\kohli\\OneDrive\\Documents\\NetBeansProjects\\amita
+localRepository=C\:\\Users\\kohli\\.m2\\repository
+test=AmitaTest
+basedir=C\:\\Users\\kohli\\OneDrive\\Documents\\NetBeansProjects\\amita
+maven.surefire.debug=-Xdebug -Xrunjdwp\:transport\=dt_socket,server\=n,address\=60481
