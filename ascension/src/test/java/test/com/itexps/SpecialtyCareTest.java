@@ -49,17 +49,17 @@ public class SpecialtyCareTest {
     public void testSpecialtyCare() throws Exception {
         driver.get("https://healthcare.ascension.org/");
         driver.findElement(By.xpath("//header/div[@id='header']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[1]/div[1]/div[1]/div[1]/div[1]/div[1]")).click();
-        Thread.sleep(3000);
+        String expectedtitle = "Specialty Care | Ascension";
+        String actualtitle = driver.getTitle();
+        Assert.assertEquals(actualtitle, expectedtitle);
+
+        //searchbox on specialty care page
         driver.findElement(By.name("get-care-now-filter-location")).click();
-        Thread.sleep(3000);
         driver.findElement(By.name("get-care-now-filter-location")).clear();
-        Thread.sleep(3000);
         driver.findElement(By.name("get-care-now-filter-location")).sendKeys("post-acute care");
-        Thread.sleep(3000);
         driver.findElement(By.linkText("Post-acute care")).click();
-        Thread.sleep(3000);
+
         driver.findElement(By.xpath("//div[@id='content']/div/div[3]/div/div/div/div/div/div/div/p[5]/a")).click();
-        Thread.sleep(6000);
         driver.close();
     }
 
